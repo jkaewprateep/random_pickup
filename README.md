@@ -1,14 +1,21 @@
 # random_pickup
-Sample random pickup question
+
+Sample random pickup question, it is easy when you can estimate number of input number of the target ture. 
+```
+pickup = tf.random.uniform(shape=[ n_random_pickup ], minval=0, maxval=array.shape[0], dtype=tf.int64, seed=10).numpy()
+```
 
 ## Question ##
-```
+
 Question find matching colors of socks when there are 10 of white color and 10 for black.
+```
    [ 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦 ], [ 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦, 🧦 ]
    [ 🧦, 🧦, 🧦 ], [ 🧦, 🧦, 🧦 ], [ 🧦, 🧦, 🧦 ]
 ```
 
 ## Gnerate input ##
+
+Generate the random number sequences as the question instants and you can change the seed number for next time quiz.
 ```
 random_seed = tf.random.set_seed(1238)
 n_objects = 10
@@ -21,6 +28,8 @@ input = tf.random.shuffle(
 ```
 
 ## Selection problem ##
+
+Selecting and display
 ```
 n_temp = tf.experimental.numpy.argmax( input, axis=0).numpy()
 n_temp = tf.cast( n_temp, dtype=tf.int64 ).numpy()
@@ -35,6 +44,8 @@ for element in pickup :
 ```
 
 ## Result ##
+
+Result is the input array, 0 as white and -1 is contrast.
 ```
 array: tf.Tensor([ 0  0 -1 -1  0  0 -1 -1 -1 -1  0 -1  0 -1 -1  0  0  0 -1 -1], shape=(20,), dtype=int32)
 array: 11
