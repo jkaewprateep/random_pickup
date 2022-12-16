@@ -43,3 +43,10 @@ pickup: [19 15  3]
 0
 -1
 ```
+
+## Books ##
+
+It is not my book but I think it is kind some some promotions, they added some tips when you reading you talking to librarians of the bookstore, conversation of knowledge desires never wrong in the same pace of good willing .
+
+![Alt text](https://github.com/jkaewprateep/random_pickup/blob/main/03.jpg?raw=true "Title")
+![Alt text](https://github.com/jkaewprateep/random_pickup/blob/main/04.jpg?raw=true "Title")
